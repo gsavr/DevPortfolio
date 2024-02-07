@@ -156,15 +156,15 @@ export const Contact: React.FC = () => {
                       src={circleG}
                       alt=""
                       className="hidden dark:block"
-                      width={400}
-                      height={400}
+                      width={500}
+                      height={500}
                     />
                     <Image
                       src={circleB}
                       alt=""
                       className="dark:hidden"
-                      width={400}
-                      height={400}
+                      width={500}
+                      height={500}
                     />
                   </motion.span>
                 </div>

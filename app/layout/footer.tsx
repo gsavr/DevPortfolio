@@ -13,8 +13,8 @@ export const Footer: React.FC = () => {
           <Image
             src={arrows}
             alt=""
-            width={400}
-            height={400}
+            width={70}
+            height={70}
             className="up-arrow h-16 w-16"
           />
         </Link>

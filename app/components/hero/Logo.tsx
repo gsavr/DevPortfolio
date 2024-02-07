@@ -14,8 +14,8 @@ export const Logo = () => {
         src={logo_dark}
         alt="GS Logo"
         priority
-        width={400}
-        height={400}
+        width={50}
+        height={50}
         className="z-40 hidden h-12 w-12 rounded-full shadow-md shadow-slate-400 transition duration-200 hover:scale-110 dark:block "
       />
 
@@ -23,8 +23,8 @@ export const Logo = () => {
         src={logo_light}
         alt="GS Logo"
         priority
-        width={400}
-        height={400}
+        width={50}
+        height={50}
         className="z-40 block h-12 w-12 rounded-full shadow-2xl shadow-slate-900 transition duration-200 hover:scale-110 dark:hidden"
       />
     </motion.div>

@@ -96,17 +96,6 @@ export const About: React.FC = () => {
           </h2>
           <Skills skillsRef={skillsRef} />
         </motion.div>
-
-        {/*  Link  */}
-        {/* <div className="mt-4 block">
-          <Link
-            to="projects"
-            className="border-accentCyan border-b text-accent"
-          >
-            See my projects
-            <img src="images/icon-arrow.svg" alt="" className="inline pb-2" />
-          </Link>
-        </div> */}
       </div>
     </div>
   );
