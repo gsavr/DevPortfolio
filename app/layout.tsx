@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Provider from "./components/Provider";
 
 export const metadata: Metadata = {
@@ -53,6 +54,7 @@ export default function RootLayout({
           <Provider>{children}</Provider>
         </main>
       </body>
+      <GoogleTagManager gtmId="G-QD6WMRP7VE" />
     </html>
   );
 }
