@@ -48,8 +48,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="text-primary bg-primary">
-        <Provider>{children}</Provider>
+      <body className="bg-primary text-primary">
+        <main>
+          <Provider>{children}</Provider>
+        </main>
       </body>
     </html>
   );

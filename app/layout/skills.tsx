@@ -44,7 +44,7 @@ export const Skills: React.FC<SkillsProps> = (props) => {
 
   const renderSkillGroup = (
     skills: { src: string; alt: string; title: string; dark?: string }[],
-    shiftValue: MotionValue<string> | undefined
+    shiftValue: MotionValue<string> | undefined,
   ) => {
     return (
       /* change space-x when switching from 6 <--> 7 items */
@@ -57,7 +57,7 @@ export const Skills: React.FC<SkillsProps> = (props) => {
     );
   };
   const renderSkills = (
-    skills: { src: string; alt: string; title: string; dark?: string }[]
+    skills: { src: string; alt: string; title: string; dark?: string }[],
   ) => {
     return skills.map(({ src, alt, title, dark }) => {
       return (
@@ -112,17 +112,3 @@ export const Skills: React.FC<SkillsProps> = (props) => {
     </div>
   );
 };
-
-/* let position = 400;
-
-  const posChange = () => {
-    if (position <= -300) {
-      position = 300;
-    } else if (position === 100) {
-      position -= 200;
-    } else {
-      position -= 100;
-    }
-    console.log(position);
-    return position;
-  }; */

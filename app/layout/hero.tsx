@@ -28,7 +28,11 @@ export const Hero: React.FC = () => {
 
   return (
     <>
-      <div id="home" ref={ref} className="hero relative overflow-hidden">
+      <div
+        id="home"
+        ref={ref}
+        className="hero min-h-full w-screen relative overflow-hidden"
+      >
         {/* background full image */}
         <motion.div
           style={{ y: backgroundY }}

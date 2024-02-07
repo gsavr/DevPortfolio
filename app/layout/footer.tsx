@@ -2,12 +2,13 @@ import Image from "next/image";
 import arrows from "../assets/images/double-angle-up-w.svg";
 import githubC from "../assets/images/github-c.png";
 import linkedin from "../assets/images/linkedin.png";
+import gsLogo from "../assets/images/gs_logo.svg";
 import Link from "next/link";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#252c38] text-white dark:bg-[#252c38]">
-      <div className=" relative mx-auto px-24 md:pb-10 md:pt-12">
+    <footer className="w-screen bg-[#252c38] text-white dark:bg-[#252c38]">
+      <div className=" relative bottom-0 mx-auto px-24 md:pb-10 md:pt-12">
         {/* UP arrows at top of footer */}
         <Link href="#home" className="up-button cursor-pointer">
           <Image
@@ -40,7 +41,7 @@ export const Footer: React.FC = () => {
                   alt="Linkedin"
                   width={40}
                   height={40}
-                  className="ficon h-[30px] w-[30px]  "
+                  className="ficon h-[30px] w-[30px]"
                 />
               </a>
             </div>
@@ -58,6 +59,15 @@ export const Footer: React.FC = () => {
                   className="ficon h-[30px] w-[30px]  "
                 />
               </a>
+            </div>
+            <div>
+              <Image
+                src={gsLogo}
+                alt="Linkedin"
+                width={40}
+                height={40}
+                className="ficon h-[30px] w-[30px]"
+              />
             </div>
           </div>
         </div>
