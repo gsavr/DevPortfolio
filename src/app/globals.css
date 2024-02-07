@@ -1,27 +1,46 @@
 @tailwind base;
+html {
+  scroll-behavior: smooth;
+}
+
+.dark {
+  --color-bg-primary: #2d3748;
+  --color-bg-secondary: #283141;
+  --color-bg-resume: #283141;
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #e2e8f0;
+  --color-text-accent: #81e6d9;
+}
+
+.light {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #edf2f7;
+  --color-bg-resume: #c8cfd0;
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #4a5568;
+  --color-text-accent: #2b6cb0;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("./assets/fonts/Raleway.ttf") format("truetype");
+}
+
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@import "./style/opening.css";
+@import "./style/hero.css";
+@import "./style/hamburger-button.css";
+@import "./style/mobile-menu.css";
+@import "./style/projects.css";
+@import "./style/contact.css";
+@import "./style/footer.css";
+@import "./style/sticky-menu.css";
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  h1 {
+    @apply mt-10 mb-0 pb-10 text-center text-4xl uppercase transition-all duration-700 md:pt-14 md:text-6xl;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
