@@ -61,8 +61,8 @@ export const About: React.FC = () => {
               who i am:
             </h2>
             <p className="text-md md:text-lg">
-              I{"'"}m a web developer specializing in React.js, Next.js,
-              Node.js, and TypeScript. With four years of experience and a
+              I{"'"}m a web developer specializing in Next.js, React.js,
+              Node.js, and TypeScript. With five years of experience and a
               certification from the University of Miami Coding Bootcamp, I{"'"}
               m dedicated to crafting engaging websites and apps.
             </p>
