@@ -15,7 +15,7 @@ Visit my live portfolio site at [Portfolio](https://www.giorgiosavron.com/)
 
 ### Preview
 
-![preview](/client/src/images/demo.gif)
+![preview](/app/assets/images/demo.gif)
 
 ## About Me
 
@@ -25,21 +25,21 @@ I am a passionate web developer with expertise in React, Typescript, and full-st
 
 Here are some key projects that I have worked on:
 
-- **ChattyAI**: Have a real-time conversation with AI based on ChatGPT. [ChattyAI App](https://chatty-ai-kappa.vercel.app/)
+- **ChattyAI**: Have a real-time conversation with AI based on ChatGPT. [ChattyAI App](https://chatty-ai-kappa.vercel.app/assets/)
 
-  <img src="/client/src/images/readme/aichat.gif" alt="ChattyAI Preview" height="200">
+  <img src="/app/assets/images/readme/aichat.gif" alt="ChattyAI Preview" height="200">
 
   ChattyAI is an AI-powered chat application that enables real-time conversations with an AI based on ChatGPT. Experience interactive and dynamic dialogues with the power of cutting-edge technologies.
 
 - **BookManagement**: A Full Stack project for managing books. [Book Mgmt](https://book-management-system.herokuapp.com/)
 
-    <img src="/client/src/images/readme/book.gif" alt="Book Mgmt Preview" height="200">
+    <img src="/app/assets/images/readme/book.gif" alt="Book Mgmt Preview" height="200">
 
   BookManagement is a Full Stack project built with React and Node.js. It provides a user-friendly interface for managing books, including features such as adding books, viewing book details, and more. The project utilizes technologies like React, Node.js, Express, Prisma, Apollo Client, and GraphQL.
 
 - **LynkChat**: Real-time chat using GraphQL Live Queries, Next.js, and NextAuth.js. [LynkChat App](https:/lynk-chat.vercel.app)
 
-  <img src="/client/src/images/readme/chat.gif" alt="ChattyAI Preview" height="200">
+  <img src="/app/assets/images/readme/chat.gif" alt="ChattyAI Preview" height="200">
 
   LynkChat is a real-time chat application that leverages GraphQL Live Queries, Next.js, and NextAuth.js. Enjoy seamless communication and engaging chat experiences.
 
