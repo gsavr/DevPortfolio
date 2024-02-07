@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Provider from "@/app/components/Provider";
+import Provider from "./components/Provider";
 
 export const metadata: Metadata = {
   title: "Giorgio Savron Development",
