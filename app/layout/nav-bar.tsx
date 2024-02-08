@@ -51,7 +51,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
   const renderLinks = () => {
     return links.map(({ link, label, target, rel }) => {
       return (
-        <div className="group cursor-pointer" key={label}>
+        <div className="group cursor-pointer font-medium" key={label}>
           <Link href={link} target={target} rel={rel}>
             {label}
           </Link>
@@ -74,7 +74,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
           <>
             {renderLinks()}
             <div className="group">
-              <Link href={resumeLink.link} className="group">
+              <Link href={resumeLink.link} className="group font-medium">
                 Resume
               </Link>
               <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-[#8bd8bd]"></div>
@@ -84,7 +84,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
           /* Back button and DL on PDF page on desktop */ <>
             <Link
               href="/"
-              className="flex items-center justify-center gap-1 hover:border-b hover:border-[#8bd8bd] "
+              className="flex items-center justify-center gap-1 font-medium hover:border-b hover:border-[#8bd8bd]"
             >
               Return <IconArrowGoBackFill className="text-2xl" />
             </Link>
@@ -93,7 +93,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
               download="Giorgio Savron Resume"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-center gap-1 hover:border-b hover:border-[#8bd8bd]"
+              className="flex items-center justify-center gap-1 font-medium hover:border-b hover:border-[#8bd8bd]"
             >
               Download <IconBxDownload className="text-2xl" />
             </Link>
