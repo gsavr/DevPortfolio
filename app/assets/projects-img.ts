@@ -34,6 +34,8 @@ import bookMgrDesk from "../assets/images/projects/desktop/book-mngr.webp";
 import bookMgrMob from "../assets/images/projects/mobile/book-mngr.webp";
 import lynkChatDesk from "../assets/images/projects/desktop/lynk-chat.webp";
 import lynkChatMob from "../assets/images/projects/mobile/lynk-chat.webp";
+import myrDesk from "../assets/images/projects/desktop/dnc-ptflio.webp";
+import myrMob from "../assets/images/projects/mobile/dnc-ptflio.webp";
 
 export const img = {
   emailDesk,
@@ -72,4 +74,6 @@ export const img = {
   bookMgrMob,
   lynkChatDesk,
   lynkChatMob,
+  myrDesk,
+  myrMob,
 };

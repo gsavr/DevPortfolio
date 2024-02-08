@@ -2,6 +2,13 @@ import { img } from "./projects-img";
 
 export const projects1 = [
   {
+    link: "https://myrianbellydancing.com/",
+    srcDesk: img.myrDesk,
+    srcMobile: img.myrMob,
+    title: "Dancer Portfolio",
+    desc: "Next.js | Youtube API | Cloudinary API | Calendly", //
+  },
+  {
     link: "https://chatty-ai-kappa.vercel.app/",
     srcDesk: img.chatAiDesk,
     srcMobile: img.chatAiMob,
@@ -23,13 +30,6 @@ export const projects1 = [
     desc: "Next.js | GraphQL | Apollo | Grafbase", //
   },
   {
-    link: "https://emailman.herokuapp.com/",
-    srcDesk: img.emailDesk,
-    srcMobile: img.emailMob,
-    title: "Emailer",
-    desc: "React | Node.js | Redux | GoogleAuth",
-  },
-  {
     link: "https://movie-search-gsavr.vercel.app/",
     srcDesk: img.moviesDesk,
     srcMobile: img.moviesMob,
@@ -39,6 +39,13 @@ export const projects1 = [
 ];
 
 export const projects2 = [
+  {
+    link: "https://emailman.herokuapp.com/",
+    srcDesk: img.emailDesk,
+    srcMobile: img.emailMob,
+    title: "Emailer",
+    desc: "React | Node.js | Redux | GoogleAuth",
+  },
   {
     link: "https://master.d3h3t6b4nsoxri.amplifyapp.com/",
     srcDesk: img.blogAiDesk,
@@ -68,13 +75,13 @@ export const projects2 = [
     title: "Campaign Texting",
     desc: "React | Node.js | Twilio | Auth0",
   },
-  {
+  /*  {
     link: "https://github.com/gsavr/Code-Note-Editor",
     srcDesk: img.codeDesk,
     srcMobile: img.codeMob,
     title: "Code & Text Editor",
     desc: "Run on Node env | npx jsnote-gs serve",
-  },
+  }, */
 ];
 
 export const projects3 = [
@@ -107,14 +114,6 @@ export const projects3 = [
     title: "Foodie Finder",
     desc: "React Native | Axios",
   },
-  /*  {
-    link: "https://gatsbycontentfulcloudclass.gatsbyjs.io/",
-    srcDesk: img.gatsbyDesk,
-    srcMobile: img.gatsbyMob,
-    title: "Gatsby Rendered site",
-    desc: "React | Gatsby | Contentful",
-  }, */
-
   {
     link: "https://gsavr.github.io/Word-Guess-Game/",
     srcDesk: img.hangDesk,
