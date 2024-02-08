@@ -16,6 +16,7 @@ export const Contact: React.FC = () => {
   const [message, setMessage] = useState("");
   const [sending, setSending] = useState(false);
   const [open, setOpen] = useState(false);
+  const [error, setError] = useState(false);
 
   const contactRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -35,21 +36,26 @@ export const Contact: React.FC = () => {
   const writeMeOpacity = useTransform(
     scrollYspring,
     [0.5, 0.9],
-    ["0%", "100%"]
+    ["0%", "100%"],
   );
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    sendEmail(name, email, phone, message);
     setSending(true);
-    setTimeout(() => {
-      setOpen(true);
-      setSending(false);
-      setName("");
+    try {
+      await sendEmail(name, email, phone, message);
+      setOpen(true); // Display success message
+      setName(""); // Clear form fields
       setEmail("");
       setPhone("");
       setMessage("");
-    }, 1250);
+    } catch (error) {
+      //console.log("Error sending email:", error); // Log error
+      setError(true); // display error message to the user
+      setOpen(true);
+    } finally {
+      setSending(false); // Reset sending state
+    }
   };
 
   return (
@@ -60,14 +66,14 @@ export const Contact: React.FC = () => {
           whileInView={"onscreen"}
           viewport={{ once: true }}
           variants={animateH1}
-          className={`bg-secondary pt-20 pb-0 lg:pb-14`}
+          className={`bg-secondary pb-0 pt-20 lg:pb-14`}
         >
           contact me
         </motion.h1>
       </div>
-      <Modal open={open} setOpen={setOpen} />
-      <div className="relative z-10 overflow-x-hidden overflow-y-hidden bg-secondary pt-0 pb-20 md:pt-10 lg:py-12">
-        <div className="container mx-auto mt-10 mb-0 max-w-6xl px-6 pb-10 md:px-8">
+      <Modal open={open} setOpen={setOpen} error={error} />
+      <div className="relative z-10 overflow-x-hidden overflow-y-hidden bg-secondary pb-20 pt-0 md:pt-10 lg:py-12">
+        <div className="container mx-auto mb-0 mt-10 max-w-6xl px-6 pb-10 md:px-8">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-4/12 ">
               <div className="mb-12 max-w-[570px] lg:mb-0">
@@ -150,7 +156,7 @@ export const Contact: React.FC = () => {
                 <div>
                   <motion.span
                     style={{ y: decorationY }}
-                    className="absolute -top-10 -right-9 z-[-1]"
+                    className="absolute -right-9 -top-10 z-[-1]"
                   >
                     <Image
                       src={circleG}

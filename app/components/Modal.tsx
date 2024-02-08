@@ -1,14 +1,15 @@
 import { Fragment, useRef } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { EnvelopeOpenIcon } from "@heroicons/react/24/outline";
+import { EnvelopeOpenIcon, XCircleIcon } from "@heroicons/react/24/outline";
 
 interface ModalProps {
   open: boolean;
   setOpen: (arg0: boolean) => void;
+  error: boolean;
 }
 
 export const Modal: React.FC<ModalProps> = (props) => {
-  const { open, setOpen } = props;
+  const { open, setOpen, error } = props;
   const cancelButtonRef = useRef(null);
 
   return (
@@ -43,27 +44,42 @@ export const Modal: React.FC<ModalProps> = (props) => {
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <Dialog.Panel className="relative transform overflow-hidden  bg-primary text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                <div className="bg-primary px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div className="bg-primary px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start">
                     <div className="mx-auto flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-full bg-primary sm:mx-0 sm:h-10 sm:w-10">
-                      <EnvelopeOpenIcon
-                        className="h-12 w-12 text-accent"
-                        aria-hidden="true"
-                      />
-                    </div>
-                    <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                      {!error ? (
+                        <EnvelopeOpenIcon
+                          className="h-12 w-12 text-accent"
+                          aria-hidden="true"
+                        />
+                      ) : (
+                        <XCircleIcon
+                          className="h-12 w-12 text-accent text-red-600"
+                          aria-hidden="true"
+                        />
+                      )}
+                    </div>{" "}
+                    <div
+                      className={`mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left `}
+                    >
+                      {/* MESSAGE DEPENDENT ON ERROR */}
                       <Dialog.Title
                         as="h3"
-                        className="text-lg font-medium uppercase leading-6 text-secondary"
+                        className={`text-lg font-medium uppercase leading-6 text-secondary ${error && "text-red-600"}`}
                       >
-                        Thank You
+                        {!error ? "Thank You" : "Please Try Again"}
                       </Dialog.Title>
                       <div className="mt-2">
-                        <p className="text-secodary text-sm">
-                          I will get back to you as soon as possible.
+                        <p
+                          className={`text-secodary text-sm ${error && "text-red-600"}`}
+                        >
+                          {!error
+                            ? "I will get back to you as soon as possible."
+                            : "Messagge did not go through."}
                         </p>
                         <p className="pt-2 text-xs">
-                          Please check your email for confirmation.
+                          {!error &&
+                            "Please check your email for confirmation."}
                         </p>
                       </div>
                     </div>
@@ -72,7 +88,7 @@ export const Modal: React.FC<ModalProps> = (props) => {
                 <div className="bg-secondary px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
                   <button
                     type="button"
-                    className=" mt-3 inline-flex w-full  justify-center border border-gray-300 bg-primary px-4 py-2 text-base font-medium text-secondary shadow-sm transition duration-300  hover:bg-[#8bd8bd] hover:bg-primary focus:outline-none dark:hover:text-slate-700 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                    className=" mt-3 inline-flex w-full  justify-center border border-gray-300 bg-primary px-4 py-2 text-base font-medium text-secondary shadow-sm transition duration-300  hover:bg-[#8bd8bd] hover:bg-primary focus:outline-none dark:hover:text-slate-700 sm:ml-3 sm:mt-0 sm:w-auto sm:text-sm"
                     onClick={() => setOpen(false)}
                     ref={cancelButtonRef}
                   >
