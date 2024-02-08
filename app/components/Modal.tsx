@@ -75,7 +75,7 @@ export const Modal: React.FC<ModalProps> = (props) => {
                         >
                           {!error
                             ? "I will get back to you as soon as possible."
-                            : "Messagge did not go through."}
+                            : "Message did not go through."}
                         </p>
                         <p className="pt-2 text-xs">
                           {!error &&
