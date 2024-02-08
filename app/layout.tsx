@@ -51,9 +51,7 @@ export default function RootLayout({
     <html lang="en">
       <GoogleAnalyticsTracking />
       <body className="bg-primary text-primary">
-        <main>
-          <Provider>{children}</Provider>
-        </main>
+        <Provider>{children}</Provider>
       </body>
     </html>
   );

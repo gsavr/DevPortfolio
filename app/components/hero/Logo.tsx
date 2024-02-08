@@ -3,7 +3,7 @@ import logo_dark from "../../assets/images/GS_Logo_dark.webp";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export const Logo = () => {
+export const Logo: React.FC = () => {
   return (
     <motion.div
       initial={{ scale: 0 }}

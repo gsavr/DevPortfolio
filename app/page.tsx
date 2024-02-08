@@ -7,13 +7,13 @@ import { StickyMenu } from "./components/StickyMenu";
 
 export default function Home() {
   return (
-    <>
+    <main id="home">
       <Hero />
       <About />
       <Projects />
       <Contact />
       <StickyMenu />
       <Footer />
-    </>
+    </main>
   );
 }

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-export const StickyMenu = () => {
+export const StickyMenu: React.FC = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   //console.log("scroll position", scrollPosition);
 
