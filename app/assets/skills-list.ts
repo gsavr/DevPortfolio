@@ -18,7 +18,7 @@ export const skills1 = [
 
 export const skills2 = [
   {
-    src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/html.svg",
+    src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/html5.svg",
     alt: "html_logo",
     title: "HTML",
   },
@@ -94,6 +94,22 @@ export const skills5 = [
 ];
 export const skills6 = [
   {
+    src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/aws.svg",
+    alt: "aws_logo",
+    title: "AWS",
+  },
+  {
+    src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/amplify.svg",
+    alt: "amplify_logo",
+    title: "Amplify",
+  },
+  {
+    src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/heroku.svg",
+    alt: "heroku_logo",
+    title: "Heroku",
+  },
+];
+/* {export const skills8 = [
     src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/bs.svg",
     alt: "bootstrap_logo",
     title: "Bootstrap",
@@ -107,5 +123,4 @@ export const skills6 = [
     src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/illustrator.svg",
     alt: "illustrator_logo",
     title: "Illustrator",
-  },
-];
+  },] */
