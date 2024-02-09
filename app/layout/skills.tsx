@@ -8,6 +8,8 @@ import {
   skills4,
   skills5,
   skills6,
+  skills7,
+  skills8,
 } from "../assets/skills-list";
 import {
   MotionValue,
@@ -35,12 +37,15 @@ export const Skills: React.FC<SkillsProps> = (props) => {
     restDelta: 0.0001,
   });
   // length of distance each group will move
-  const xLeft55 = useTransform(scrollYspring, [0.25, 0.5], ["0vw", "-55vw"]);
-  const xRight55 = useTransform(scrollYspring, [0.25, 0.5], ["0vw", "55vw"]);
-  const xLeft50 = useTransform(scrollYspring, [0.3, 0.5], ["0vw", "-50vw"]);
-  const xRight50 = useTransform(scrollYspring, [0.3, 0.5], ["0vw", "50vw"]);
-  const xLeft45 = useTransform(scrollYspring, [0.35, 0.5], ["0vw", "-45vw"]);
-  const xRight45 = useTransform(scrollYspring, [0.35, 0.5], ["0vw", "45vw"]);
+  //[.25, .5]--when it starts moving to when it should end  [0vw, -55vw]--where it starts to where it moves to
+  const xLeft55 = useTransform(scrollYspring, [0.5, 0.8], ["0vw", "-65vw"]);
+  const xRight55 = useTransform(scrollYspring, [0.5, 0.8], ["0vw", "65vw"]);
+  const xLeft50 = useTransform(scrollYspring, [0.55, 0.8], ["0vw", "-65vw"]);
+  const xRight50 = useTransform(scrollYspring, [0.55, 0.8], ["0vw", "65vw"]);
+  const xLeft45 = useTransform(scrollYspring, [0.65, 0.8], ["0vw", "-65vw"]);
+  const xRight45 = useTransform(scrollYspring, [0.65, 0.8], ["0vw", "65vw"]);
+  const xLeft40 = useTransform(scrollYspring, [0.7, 0.8], ["0vw", "-65vw"]);
+  const xRight40 = useTransform(scrollYspring, [0.7, 0.8], ["0vw", "65vw"]);
 
   const renderSkillGroup = (
     skills: { src: string; alt: string; title: string; dark?: string }[],
@@ -108,6 +113,15 @@ export const Skills: React.FC<SkillsProps> = (props) => {
         {renderSkillGroup(skills5, xLeft45)}
         {/* 6th 3 items */}
         {renderSkillGroup(skills6, xRight45)}
+      </div>
+      {/* 4th ROW of 6 */}
+      <div className="flex flex-col space-y-4 md:flex-row md:space-x-12 md:space-y-0 lg:space-x-24 ">
+        {/*7th  3 items */}
+        {renderSkillGroup(skills7, xLeft40)}
+        {/* 8th 3 items */}
+        <span className="hidden md:block ">
+          {renderSkillGroup(skills8, xRight40)}
+        </span>
       </div>
     </div>
   );

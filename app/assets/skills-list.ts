@@ -110,18 +110,49 @@ export const skills6 = [
     title: "Heroku",
   },
 ];
-/* {export const skills8 = [
+export const skills7 = [
+  {
+    src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/git.svg",
+    alt: "git_logo",
+    title: "Git",
+  },
+  {
+    src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/prisma2.svg",
+    alt: "prisma_logo",
+    title: "Prisma",
+    dark: "dark:text-white",
+  },
+  {
+    src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/motion.svg",
+    alt: "motion_logo",
+    title: "Motion",
+  },
+];
+export const skills8 = [
+  {
+    src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/apollo.svg",
+    alt: "apollo_logo",
+    title: "Apollo",
+    dark: "dark:rounded-full dark:bg-[#77C7BA] dark:p-1",
+  },
+  {
     src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/bs.svg",
     alt: "bootstrap_logo",
     title: "Bootstrap",
   },
   {
+    src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/vercel.svg",
+    alt: "vercel_logo",
+    title: "Vercel",
+  },
+  /* {
     src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/ps.svg",
     alt: "photoshop_logo",
     title: "Photoshop",
-  },
-  {
+  }, */
+  /* {
     src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/illustrator.svg",
     alt: "illustrator_logo",
     title: "Illustrator",
-  },] */
+  }, */
+];
