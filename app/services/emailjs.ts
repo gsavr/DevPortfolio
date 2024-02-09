@@ -15,7 +15,7 @@ export const sendEmail = async (
     };
 
     const response = await emailjs.send(
-      "service_784y7ve",
+      "default_service",
       "template_61aph43",
       templateParams,
       "LQV0njcnqS4hUqoWI",
