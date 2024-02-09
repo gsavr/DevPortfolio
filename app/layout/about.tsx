@@ -57,7 +57,7 @@ export const About: React.FC = () => {
             variants={animatefromRight}
             className="flex flex-col space-y-5 text-secondary"
           >
-            <h2 className="max-w-md text-xl font-bold uppercase md:text-4xl">
+            <h2 className="max-w-md text-xl font-semibold uppercase md:text-4xl">
               who i am:
             </h2>
             <p className="text-md md:text-lg">
@@ -91,7 +91,7 @@ export const About: React.FC = () => {
           variants={animatefromLeft}
           className="flex flex-col space-y-5"
         >
-          <h2 className="max-w-md text-xl font-bold uppercase md:text-4xl">
+          <h2 className="max-w-md text-xl font-semibold uppercase md:text-4xl">
             Skills:
           </h2>
           <Skills skillsRef={skillsRef} />

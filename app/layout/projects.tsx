@@ -29,7 +29,7 @@ export const Projects: React.FC = () => {
       srcMobile: StaticImageData;
       title: string;
       desc: string;
-    }[]
+    }[],
   ) => {
     return list.map(({ link, srcDesk, srcMobile, title, desc }) => {
       return (
@@ -115,7 +115,7 @@ export const Projects: React.FC = () => {
               onResize={undefined}
               onResizeCapture={undefined}
             >
-              <div className="py-1">More</div>
+              <div className="py-1 font-medium">More</div>
             </AccordionHeader>
           </motion.div>
           <AccordionBody className="pb-0">

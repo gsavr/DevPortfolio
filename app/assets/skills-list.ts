@@ -97,6 +97,7 @@ export const skills6 = [
     src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/aws.svg",
     alt: "aws_logo",
     title: "AWS",
+    dark: "dark:rounded-full dark:bg-slate-500 dark:p-1",
   },
   {
     src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/amplify.svg",

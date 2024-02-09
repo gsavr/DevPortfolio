@@ -77,7 +77,7 @@ export const Contact: React.FC = () => {
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-4/12 ">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-                <h2 className="mb-6 text-[28px] font-bold uppercase text-primary sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                <h2 className="mb-6 text-[28px] font-semibold uppercase text-primary sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   LET{"'"}S CONNECT
                 </h2>
                 <motion.div

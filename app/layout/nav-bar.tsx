@@ -64,9 +64,15 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
   return (
     <nav className=" flex items-center justify-between rounded-full bg-[#E0ECEF]/80 font-[600] text-black transition-all duration-1500 dark:bg-[#63686A]/80 dark:text-primary">
       {/* Logo  */}
-      <Link href="/">
-        <Logo />
-      </Link>
+      <div className="flex items-center ">
+        <Link href="/">
+          <Logo />
+        </Link>
+        <span className="hidden pl-4 font-medium md:block  lg:font-semibold">
+          GSDevelopment
+        </span>
+      </div>
+      <span className="font-medium md:hidden">GSDevelopment</span>
       {/*  Menu */}
       <div className=" hidden h-10 items-center md:flex md:space-x-8">
         {/* All links -- conditionally depending on page */}
