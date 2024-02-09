@@ -40,12 +40,12 @@ export const Skills: React.FC<SkillsProps> = (props) => {
   //[.25, .5]--when it starts moving to when it should end  [0vw, -55vw]--where it starts to where it moves to
   const xLeft55 = useTransform(scrollYspring, [0.25, 0.55], ["0vw", "-65vw"]);
   const xRight55 = useTransform(scrollYspring, [0.25, 0.55], ["0vw", "65vw"]);
-  const xLeft50 = useTransform(scrollYspring, [0.35, 0.55], ["0vw", "-65vw"]);
-  const xRight50 = useTransform(scrollYspring, [0.35, 0.55], ["0vw", "65vw"]);
-  const xLeft45 = useTransform(scrollYspring, [0.4, 0.55], ["0vw", "-65vw"]);
-  const xRight45 = useTransform(scrollYspring, [0.4, 0.55], ["0vw", "65vw"]);
-  const xLeft40 = useTransform(scrollYspring, [0.45, 0.55], ["0vw", "-65vw"]);
-  const xRight40 = useTransform(scrollYspring, [0.45, 0.55], ["0vw", "65vw"]);
+  const xLeft50 = useTransform(scrollYspring, [0.3, 0.55], ["0vw", "-65vw"]);
+  const xRight50 = useTransform(scrollYspring, [0.3, 0.55], ["0vw", "65vw"]);
+  const xLeft45 = useTransform(scrollYspring, [0.35, 0.55], ["0vw", "-65vw"]);
+  const xRight45 = useTransform(scrollYspring, [0.35, 0.55], ["0vw", "65vw"]);
+  const xLeft40 = useTransform(scrollYspring, [0.4, 0.55], ["0vw", "-65vw"]);
+  const xRight40 = useTransform(scrollYspring, [0.4, 0.55], ["0vw", "65vw"]);
 
   const renderSkillGroup = (
     skills: { src: string; alt: string; title: string; dark?: string }[],
