@@ -2,6 +2,7 @@
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import { NavBar } from "../layout/nav-bar";
+import resume from "https://giorgiosavrondotcom.s3.amazonaws.com/resume.pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -17,10 +18,10 @@ export default function Resume() {
           <div className="gradient-bg container flex h-fit w-fit items-center justify-center overflow-x-auto overflow-y-auto rounded-xl p-0 shadow-2xl transition-all duration-700 lg:hover:translate-y-44 lg:hover:scale-150">
             <Document
               className={"z-70"}
-              file={"/resume.pdf"}
+              file={resume}
               renderMode={"svg"}
               error={
-                <div>
+                <div className="px-2 text-white">
                   Looks like Giorgio is updating his resume, please come back
                   soon.
                 </div>

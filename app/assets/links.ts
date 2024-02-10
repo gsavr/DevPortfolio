@@ -5,7 +5,7 @@ export const links = [
 ];
 
 export const resumeLink = {
-  link: "/resume",
+  link: "https://giorgiosavrondotcom.s3.amazonaws.com/resume.pdf",
   label: "Resume",
   //target: "_blank",
   //rel: "noreferrer",

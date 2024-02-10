@@ -1,0 +1,5 @@
+{
+  "https://d3p0c9cfxsa3zu.cloudfront.net/resume.pdf": { "integrity": "sha512-K/UPASfD62r0NX0Txe6xGCTis+VAWu72qgPTOD3Ze57OJhfKFu0f3uG5p23e2hSJHnPLL9CCAsGNsUHB6dVFvg==", "contentType": "application/pdf" },
+  "https://giorgiosavrondotcom.s3.amazonaws.com/resume.pdf": { "integrity": "sha512-K/UPASfD62r0NX0Txe6xGCTis+VAWu72qgPTOD3Ze57OJhfKFu0f3uG5p23e2hSJHnPLL9CCAsGNsUHB6dVFvg==", "contentType": "application/pdf" },
+  "version": 1
+}
