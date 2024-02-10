@@ -72,7 +72,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
           GSDevelopment
         </span>
       </div>
-      <span className="font-medium md:hidden">GSDevelopment</span>
+      <span className="text-sm font-medium md:hidden">GSDevelopment</span>
       {/*  Menu */}
       <div className=" hidden h-10 items-center md:flex md:space-x-8">
         {/* All links -- conditionally depending on page */}
@@ -95,7 +95,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
               Return <IconArrowGoBackFill className="text-2xl" />
             </Link>
             <Link
-              href={"https://d3p0c9cfxsa3zu.cloudfront.net/resume.pdf"}
+              href={"https://giorgiosavrondotcom.s3.amazonaws.com/resume.pdf"}
               download="Giorgio Savron Resume"
               target="_blank"
               rel="noreferrer"
@@ -124,7 +124,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
         <>
           {/* Back button and DL button on PDF page mobile */}
           <Link
-            href={"https://d3p0c9cfxsa3zu.cloudfront.net/resume.pdf"}
+            href={"https://giorgiosavrondotcom.s3.amazonaws.com/resume.pdf"}
             download="Giorgio Savron Resume"
             target="_blank"
             rel="noreferrer"
