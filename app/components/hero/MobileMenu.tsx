@@ -14,18 +14,11 @@ export const MobileMenu: React.FC<MobileMenuProps> = (props) => {
 
   //do not allow scrolling when mobile menu is open
   useEffect(() => {
-    // Function to handle body overflow
-    const handleBodyOverflow = () => {
-      document.body.style.overflow = open ? "hidden" : "auto";
-    };
-
-    // Set body overflow when modal is open
-    handleBodyOverflow();
-
-    // Cleanup function to restore body overflow when component unmounts or modal closes
-    return () => {
-      document.body.style.overflow = "auto";
-    };
+    if (open === "open") {
+      document.body.style.overflow = "hidden";
+    } else if (open === "closed") {
+      document.body.style.overflow = "unset";
+    }
   }, [open]);
 
   //map out links form links var
