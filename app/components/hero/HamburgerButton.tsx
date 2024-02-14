@@ -14,6 +14,7 @@ export const HamburgerButton: React.FC<HamburgerButtonProps> = (props) => {
         id="menu-btn"
         onClick={openMobileMenu}
         type="button"
+        aria-label="Toggle mobile menu"
         className={`${open} hamburger z-[60] block focus:outline-none md:hidden`}
       >
         <span className="hamburger-top bg-black dark:bg-white"></span>
@@ -21,7 +22,7 @@ export const HamburgerButton: React.FC<HamburgerButtonProps> = (props) => {
         <span className="hamburger-bottom bg-black dark:bg-white"></span>
       </button>
       {/* mobile dark theme toggle */}
-      <div className="block pt-0 pr-0 md:hidden">
+      <div className="block pr-0 pt-0 md:hidden">
         <ToggleTheme />
       </div>
     </div>

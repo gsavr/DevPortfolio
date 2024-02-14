@@ -10,7 +10,11 @@ export const Footer: React.FC = () => {
     <footer className="w-screen bg-[#252c38] text-white dark:bg-[#252c38]">
       <div className=" relative bottom-0 mx-auto px-14 md:pb-10 md:pt-12 lg:px-24">
         {/* UP arrows at top of footer */}
-        <Link href="#home" className="up-button cursor-pointer">
+        <Link
+          href="#home"
+          className="up-button cursor-pointer"
+          aria-label="Scroll to top"
+        >
           <Image
             src={arrows}
             alt=""
@@ -35,6 +39,7 @@ export const Footer: React.FC = () => {
                 href="https://www.linkedin.com/in/giorgio-savron/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Go to my linkedin"
               >
                 <Image
                   src={linkedin}
@@ -50,6 +55,7 @@ export const Footer: React.FC = () => {
                 href="https://github.com/gsavr"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Go to my github"
               >
                 <Image
                   src={githubC}

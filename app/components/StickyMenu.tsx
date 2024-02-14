@@ -57,7 +57,7 @@ export const StickyMenu: React.FC = () => {
     <>
       <AnimatePresence>
         {scrollPosition > 650 && scrollPosition < bottom && (
-          <Link href="#home">
+          <Link href="#home" aria-label="Scroll to top">
             <motion.button
               className="scrollToTop-btn"
               initial={{ y: 100, opacity: 0 }}

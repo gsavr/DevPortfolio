@@ -30,6 +30,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = (props) => {
           key={label}
           target={target}
           rel={rel}
+          aria-label={label}
           onClick={openMobileMenu}
           className={`hover:text-[#4fa285] ${opening} cursor-pointer transition-all duration-200`}
         >
@@ -46,6 +47,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = (props) => {
           <>
             <Link
               href="#hero"
+              aria-label="Open Mobile Menu"
               onClick={openMobileMenu}
               className={`hover:text-[#4fa285] ${opening} cursor-pointer transition-all duration-200`}
             >
@@ -54,6 +56,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = (props) => {
             {renderLinks()}
             <Link
               href={resumeLink.link}
+              aria-label="Go to Resume"
               className={`hover:text-[#4fa285] ${opening} cursor-pointer transition-all duration-200`}
             >
               Resume

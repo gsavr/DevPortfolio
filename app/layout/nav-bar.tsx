@@ -52,7 +52,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
     return links.map(({ link, label, target, rel }) => {
       return (
         <div className="group cursor-pointer font-medium" key={label}>
-          <Link href={link} target={target} rel={rel}>
+          <Link href={link} target={target} rel={rel} aria-label={label}>
             {label}
           </Link>
           <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-[#8bd8bd]"></div>
@@ -65,7 +65,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
     <nav className=" flex items-center justify-between rounded-full bg-[#E0ECEF]/80 font-[600] text-black transition-all duration-1500 dark:bg-[#63686A]/80 dark:text-primary">
       {/* Logo  */}
       <div className="flex items-center ">
-        <Link href="/">
+        <Link href="/" aria-label="Go Home">
           <Logo />
         </Link>
         <span className="hidden pl-4 font-medium md:block  lg:font-semibold">
@@ -80,7 +80,11 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
           <>
             {renderLinks()}
             <div className="group">
-              <Link href={resumeLink.link} className="group font-medium">
+              <Link
+                href={resumeLink.link}
+                className="group font-medium"
+                aria-label="Go to my resume"
+              >
                 Resume
               </Link>
               <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-[#8bd8bd]"></div>
@@ -91,12 +95,14 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
             <Link
               href="/"
               className="flex items-center justify-center gap-1 font-medium hover:border-b hover:border-[#8bd8bd]"
+              aria-label="Go to Homepage"
             >
               Return <IconArrowGoBackFill className="text-2xl" />
             </Link>
             <Link
               href={"https://giorgiosavrondotcom.s3.amazonaws.com/resume.pdf"}
               download="Giorgio Savron Resume"
+              aria-label="Download my resume"
               target="_blank"
               rel="noreferrer"
               className="flex items-center justify-center gap-1 font-medium hover:border-b hover:border-[#8bd8bd]"
@@ -126,6 +132,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
           <Link
             href={"https://giorgiosavrondotcom.s3.amazonaws.com/resume.pdf"}
             download="Giorgio Savron Resume"
+            aria-label="Download my resume"
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center gap-1 hover:border-b hover:border-[#8bd8bd] md:hidden"
@@ -134,6 +141,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
           </Link>
           <Link
             href="/"
+            aria-label="Go to Homepage"
             className="rounded-full bg-[#648990]/50 p-3 text-lg text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-transparent dark:text-gray-100 dark:hover:bg-gray-700 dark:focus:ring-transparent md:hidden"
           >
             <IconArrowGoBackFill className="text-2xl" />

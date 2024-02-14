@@ -88,6 +88,7 @@ export const Modal: React.FC<ModalProps> = (props) => {
                 <div className="bg-secondary px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
                   <button
                     type="button"
+                    aria-label="Close Modal"
                     className=" mt-3 inline-flex w-full  justify-center border border-gray-300 bg-primary px-4 py-2 text-base font-medium text-secondary shadow-sm transition duration-300  hover:bg-[#8bd8bd] hover:bg-primary focus:outline-none dark:hover:text-slate-700 sm:ml-3 sm:mt-0 sm:w-auto sm:text-sm"
                     onClick={() => setOpen(false)}
                     ref={cancelButtonRef}

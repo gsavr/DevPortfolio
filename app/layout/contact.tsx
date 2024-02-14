@@ -138,6 +138,7 @@ export const Contact: React.FC = () => {
                   <div>
                     <button
                       type="submit"
+                      aria-label="Submit message"
                       className={`form-button  ${
                         sending ? "bg-[#8bd8bd] shadow-2xl" : "bg-[#3c77b9]"
                       }`}

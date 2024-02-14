@@ -39,6 +39,7 @@ export const Projects: React.FC = () => {
           viewport={{ once: true, amount: 0.3 }}
           variants={animatePic}
           href={link}
+          aria-label="Go to live project"
           className="item group"
           target="_blank"
           rel="noreferrer"

@@ -67,7 +67,11 @@ export const Hero: React.FC = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ type: "spring", duration: 2, bounce: 0.3 }}
               >
-                <Link href="#about" className="cursor-pointer">
+                <Link
+                  href="#about"
+                  className="cursor-pointer"
+                  aria-label="About me"
+                >
                   <div
                     className={`hero-box transition-all duration-2000
                   `}
