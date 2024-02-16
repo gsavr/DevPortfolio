@@ -76,6 +76,7 @@ export const Skills: React.FC<SkillsProps> = (props) => {
             width={400}
             height={400}
             className={`${dark ? dark : ""} h-14 w-14 lg:h-16 lg:w-16`}
+            loading="lazy"
           />
           <div className="flex w-20 justify-center">{title}</div>
         </div>

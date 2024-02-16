@@ -45,6 +45,8 @@ export const About: React.FC = () => {
             style={{ y: mePicY }}
             width={100}
             height={100}
+            placeholder="blur"
+            loading="lazy"
           />
         </div>
 
