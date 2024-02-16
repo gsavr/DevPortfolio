@@ -65,7 +65,7 @@ export const Hero: React.FC = () => {
               <motion.div
                 initial={{ opacity: 0, x: "-35vw" }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ type: "spring", duration: 2, bounce: 0.3 }}
+                transition={{ type: "spring", duration: 0.8, bounce: 0.3 }}
               >
                 <Link
                   href="#about"

@@ -16,7 +16,7 @@ export const Logo: React.FC = () => {
         priority
         width={50}
         height={50}
-        className="z-40 hidden h-12 w-12 rounded-full shadow-md shadow-slate-400 transition duration-200 hover:scale-110 dark:block "
+        className="z-40 hidden h-12 w-12 rounded-full transition duration-200 hover:scale-110 dark:block "
       />
 
       <Image
@@ -25,7 +25,7 @@ export const Logo: React.FC = () => {
         priority
         width={50}
         height={50}
-        className="z-40 block h-12 w-12 rounded-full shadow-2xl shadow-slate-900 transition duration-200 hover:scale-110 dark:hidden"
+        className="z-40 block h-12 w-12 rounded-full transition duration-200 hover:scale-110 dark:hidden"
       />
     </motion.div>
   );

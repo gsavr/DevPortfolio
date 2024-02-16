@@ -15,7 +15,7 @@ Visit my live portfolio site at [Portfolio](https://www.giorgiosavron.com/)
 
 ### Preview
 
-![preview](/app/assets/images/demo.gif)
+![preview](https://d3p0c9cfxsa3zu.cloudfront.net/images/demo.gif)
 
 ## About Me
 

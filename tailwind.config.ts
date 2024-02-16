@@ -28,8 +28,8 @@ const config: Config = {
         2000: "2000ms",
       },
       backgroundImage: {
-        giodesk: "url(/gio1.webp)",
-        giofront: "url(/gio2.webp)",
+        giodesk: "url(https://d3p0c9cfxsa3zu.cloudfront.net/gio1.webp)",
+        giofront: "url(https://d3p0c9cfxsa3zu.cloudfront.net/gio2.webp)",
       },
       backgroundSize: {
         auto: "auto",
