@@ -79,7 +79,7 @@ export const Hero: React.FC = () => {
                     <p className="pb-3 text-2xl md:pb-6 md:text-5xl lg:pb-7">
                       Welcome {"</>"}
                     </p>
-                    <p className="text-4xl text-primary transition-all duration-1000 md:text-6xl ">
+                    <p className="text-4xl text-primary transition-all duration-500 md:text-6xl ">
                       Giorgio Savron
                     </p>
                     <p>Full Stack Developer</p>

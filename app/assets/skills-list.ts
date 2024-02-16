@@ -123,7 +123,7 @@ export const skills7 = [
     dark: "dark:text-white",
   },
   {
-    src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/motion.svg",
+    src: "https://d3p0c9cfxsa3zu.cloudfront.net/skills/motion-sm.svg",
     alt: "motion_logo",
     title: "Motion",
   },
