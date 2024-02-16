@@ -73,8 +73,8 @@ export const Skills: React.FC<SkillsProps> = (props) => {
           <Image
             src={src}
             alt={alt}
-            width={400}
-            height={400}
+            width={50}
+            height={50}
             className={`${dark ? dark : ""} h-14 w-14 lg:h-16 lg:w-16`}
             loading="lazy"
           />

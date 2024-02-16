@@ -43,8 +43,8 @@ export const About: React.FC = () => {
             src={photo.src}
             alt="Giorgio"
             style={{ y: mePicY }}
-            width={100}
-            height={100}
+            width={50}
+            height={50}
             placeholder="blur"
             loading="lazy"
           />

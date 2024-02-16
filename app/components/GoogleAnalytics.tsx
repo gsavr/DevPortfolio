@@ -2,12 +2,16 @@
 
 import Script from "next/script";
 
-export const GoogleAnalyticsTracking: React.FC = () => {
+// using async makes the app have better performance
+export const GoogleAnalyticsTracking: React.FC = async () => {
   return (
     <>
       {/* Global site tag (gtag.js) - Google Analytics */}
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-GOOGLEID" />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script
+        defer
+        src="https://www.googletagmanager.com/gtag/js?id=G-GOOGLEID"
+      />
+      <Script defer id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}

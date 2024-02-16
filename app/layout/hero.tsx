@@ -35,15 +35,15 @@ export const Hero: React.FC = () => {
         {/* background full image */}
         <motion.div
           style={{ y: backgroundY }}
-          className="hero-bg absolute inset-0 z-0"
+          className="absolute inset-0 z-0 bg-giodesk bg-cover bg-center"
         />
         {/* background w/o view */}
         <motion.div
           style={{ y: backgroundFrontY }}
-          className="hero-bg-front absolute inset-0 "
+          className="absolute inset-0 bg-giofront bg-cover bg-center "
         />
         {/* gradient for top of image - will not have parallax effect */}
-        <div className="gradient-bg relative  h-screen">
+        <div className="relative bottom-0 left-0 right-0 top-0 h-screen bg-gray-500/50 dark:from-gray-900/70  dark:to-gray-800/80">
           {/* navbar */}
           <motion.div
             style={{ y: navY }}
@@ -73,13 +73,13 @@ export const Hero: React.FC = () => {
                   aria-label="About me"
                 >
                   <div
-                    className={`hero-box transition-all duration-2000
+                    className={`-mt-20 max-w-2xl rounded border-2 bg-[#E0ECEF]/80 p-4 text-3xl uppercase text-primary shadow-2xl transition-all duration-200 hover:text-slate-400 dark:bg-[#63686A]/80  dark:hover:text-slate-500 md:m-16 md:mx-0 md:p-10 md:text-5xl md:leading-normal
                   `}
                   >
                     <p className="pb-3 text-2xl md:pb-6 md:text-5xl lg:pb-7">
                       Welcome {"</>"}
                     </p>
-                    <p className="text-4xl text-primary transition-all duration-500 md:text-6xl ">
+                    <p className="text-4xl text-primary  md:text-6xl ">
                       Giorgio Savron
                     </p>
                     <p>Full Stack Developer</p>
