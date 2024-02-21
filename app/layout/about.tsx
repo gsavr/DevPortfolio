@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import photo from "../assets/images/me.webp";
+import photo from "../assets/images/me-blackshirt.webp";
 import { Skills } from "./skills";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
