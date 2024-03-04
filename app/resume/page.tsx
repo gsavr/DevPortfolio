@@ -2,7 +2,9 @@
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import { NavBar } from "../layout/nav-bar";
-import resume from "https://giorgiosavrondotcom.s3.amazonaws.com/resume.pdf";
+import resume from "https://giorgiosavrondotcom.s3.amazonaws.com/resume324.pdf";
+
+export const revalidate = 0;
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 

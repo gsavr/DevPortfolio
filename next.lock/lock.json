@@ -3,5 +3,6 @@
   "https://d3p0c9cfxsa3zu.cloudfront.net/gio2.webp": { "integrity": "sha512-Yij9In0aUinMYfsZZypoTTBuwhovYPmTxavfcOdsdkWjnaSkJ9THe4RngBfFsXDIo6cDMW6JbtTC0jG04/8gAg==", "contentType": "image/webp" },
   "https://d3p0c9cfxsa3zu.cloudfront.net/resume.pdf": { "integrity": "sha512-K/UPASfD62r0NX0Txe6xGCTis+VAWu72qgPTOD3Ze57OJhfKFu0f3uG5p23e2hSJHnPLL9CCAsGNsUHB6dVFvg==", "contentType": "application/pdf" },
   "https://giorgiosavrondotcom.s3.amazonaws.com/resume.pdf": { "integrity": "sha512-K/UPASfD62r0NX0Txe6xGCTis+VAWu72qgPTOD3Ze57OJhfKFu0f3uG5p23e2hSJHnPLL9CCAsGNsUHB6dVFvg==", "contentType": "application/pdf" },
+  "https://giorgiosavrondotcom.s3.amazonaws.com/resume324.pdf": { "integrity": "sha512-bZ9vs/YNDJ/H8AHBlST++ld4clrLnwy3fwViORp/c0KJYRzvZD1/ROkIHAxN18f41G5r95Lm56PDzAifqYmTpA==", "contentType": "application/pdf" },
   "version": 1
 }
