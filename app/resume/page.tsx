@@ -2,7 +2,7 @@
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import { NavBar } from "../layout/nav-bar";
-import resume from "https://giorgiosavrondotcom.s3.amazonaws.com/resume32.pdf";
+import resume from "https://giorgiosavrondotcom.s3.amazonaws.com/resume324.pdf";
 
 export const revalidate = 3600;
 
@@ -21,7 +21,8 @@ export default function Resume() {
             <Document
               className={"z-70"}
               file={resume}
-              renderMode={"svg"}
+              loading={<p className="px-2 text-white">Loading Resume</p>}
+              renderMode={"canvas"}
               error={
                 <div className="px-2 text-white">
                   Looks like Giorgio is updating his resume, please come back
@@ -35,7 +36,7 @@ export default function Resume() {
                 pageNumber={1}
                 renderTextLayer={false}
                 renderAnnotationLayer={false}
-                renderMode={"svg"}
+                renderMode={"canvas"}
               />
               <Page
                 className={"block md:hidden"}
@@ -43,7 +44,7 @@ export default function Resume() {
                 scale={0.65}
                 renderTextLayer={false}
                 renderAnnotationLayer={false}
-                renderMode={"svg"}
+                renderMode={"canvas"}
               />
             </Document>
           </div>
