@@ -100,7 +100,9 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
               Return <IconArrowGoBackFill className="text-2xl" />
             </Link>
             <Link
-              href={"https://giorgiosavrondotcom.s3.amazonaws.com/resume.pdf"}
+              href={
+                "https://giorgiosavrondotcom.s3.amazonaws.com/gs_resume.pdf"
+              }
               download="Giorgio Savron Resume"
               aria-label="Download my resume"
               target="_blank"
@@ -130,7 +132,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
         <>
           {/* Back button and DL button on PDF page mobile */}
           <Link
-            href={"https://giorgiosavrondotcom.s3.amazonaws.com/resume.pdf"}
+            href={"https://giorgiosavrondotcom.s3.amazonaws.com/gs_resume.pdf"}
             download="Giorgio Savron Resume"
             aria-label="Download my resume"
             target="_blank"
