@@ -15,7 +15,6 @@ const nextConfig = {
     urlImports: [
       "https://d3p0c9cfxsa3zu.cloudfront.net/",
       "https://giorgiosavrondotcom.s3.amazonaws.com/",
-      "https://giorgiosavrondotcom.s3.amazonaws.com/gxresume.pdf",
     ],
   },
 };
