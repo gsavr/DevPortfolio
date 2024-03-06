@@ -101,7 +101,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
             </Link>
             <Link
               href={
-                "https://giorgiosavrondotcom.s3.amazonaws.com/gs-resume.pdf"
+                "https://giorgiosavrondotcom.s3.amazonaws.com/gsxresume.pdf"
               }
               download="Giorgio Savron Resume"
               aria-label="Download my resume"
@@ -132,7 +132,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
         <>
           {/* Back button and DL button on PDF page mobile */}
           <Link
-            href={"https://giorgiosavrondotcom.s3.amazonaws.com/gs-resume.pdf"}
+            href={"https://giorgiosavrondotcom.s3.amazonaws.com/gsxresume.pdf"}
             download="Giorgio Savron Resume"
             aria-label="Download my resume"
             target="_blank"
