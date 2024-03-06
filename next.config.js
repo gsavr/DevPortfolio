@@ -11,6 +11,7 @@ const nextConfig = {
 
     return config;
   },
+  //experimental file import pdf
   experimental: {
     urlImports: [
       "https://d3p0c9cfxsa3zu.cloudfront.net/",

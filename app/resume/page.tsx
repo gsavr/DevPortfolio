@@ -1,14 +1,22 @@
 "use client";
+import { useMemo } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import { NavBar } from "../layout/nav-bar";
-import resume from "https://giorgiosavrondotcom.s3.amazonaws.com/resume324.pdf";
 
 export const revalidate = 3600;
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default function Resume() {
+  // Memoizing the file URL
+  const file = useMemo(
+    () => ({
+      url: "https://giorgiosavrondotcom.s3.amazonaws.com/resume.pdf",
+    }),
+    [],
+  );
+
   return (
     <>
       <div className="min-w-screen flex min-h-screen bg-resume">
@@ -20,11 +28,12 @@ export default function Resume() {
           <div className="gradient-bg container flex h-fit w-fit items-center justify-center overflow-x-auto overflow-y-auto rounded-xl p-0 shadow-2xl transition-all duration-700 lg:hover:translate-y-44 lg:hover:scale-150">
             <Document
               className={"z-70"}
-              file={resume}
-              loading={<p className="px-2 text-white">Loading Resume</p>}
+              file={file}
+              /* in order to access the file, CORS was uppdated in the S3-bucket to allow giorgiosavron.com */
+              loading={<p className="px-4 py-2 text-white">Loading Resume</p>}
               renderMode={"canvas"}
               error={
-                <div className="px-2 text-white">
+                <div className="px-4 py-2 text-white">
                   Looks like Giorgio is updating his resume, please come back
                   soon.
                 </div>
