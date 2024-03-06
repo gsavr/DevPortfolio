@@ -2,7 +2,7 @@
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import { NavBar } from "../layout/nav-bar";
-import resume from "https://giorgiosavrondotcom.s3.amazonaws.com/gsxresume.pdf";
+import resume from "https://giorgiosavrondotcom.s3.amazonaws.com/gxresume.pdf";
 
 export const revalidate = 3600;
 
