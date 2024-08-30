@@ -90,7 +90,7 @@ export const Contact: React.FC = () => {
               </div>
             </div>
             <motion.div className="w-full px-4 lg:w-8/12" style={{ y: formY }}>
-              <div className="relative rounded bg-primary p-8 shadow-2xl dark:bg-[#465162] sm:p-12">
+              <div className="relative rounded bg-primary p-8 shadow-2xl dark:bg-[#585d65] sm:p-12">
                 <form
                   onSubmit={(e: React.FormEvent<HTMLFormElement>) =>
                     handleSubmit(e)
@@ -140,7 +140,7 @@ export const Contact: React.FC = () => {
                       type="submit"
                       aria-label="Submit message"
                       className={`form-button  ${
-                        sending ? "bg-[#8bd8bd] shadow-2xl" : "bg-[#3c77b9]"
+                        sending ? "bg-[#dede73] shadow-2xl" : "bg-[#7d867f]"
                       }`}
                     >
                       {/* old color button bg-[#243665] */}

@@ -55,7 +55,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
           <Link href={link} target={target} rel={rel} aria-label={label}>
             {label}
           </Link>
-          <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-[#8bd8bd]"></div>
+          <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-[#fdfd96]"></div>
         </div>
       );
     });
@@ -87,14 +87,14 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
               >
                 Resume
               </Link>
-              <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-[#8bd8bd]"></div>
+              <div className="mx-2 transition duration-300 group-hover:border-b group-hover:border-[#fdfd96]"></div>
             </div>
           </>
         ) : (
           /* Back button and DL on PDF page on desktop */ <>
             <Link
               href="/"
-              className="flex items-center justify-center gap-1 font-medium hover:border-b hover:border-[#8bd8bd]"
+              className="flex items-center justify-center gap-1 font-medium hover:border-b hover:border-[#fdfd96]"
               aria-label="Go to Homepage"
             >
               Return <IconArrowGoBackFill className="text-2xl" />
@@ -105,7 +105,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
               aria-label="Download my resume"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-center gap-1 font-medium hover:border-b hover:border-[#8bd8bd]"
+              className="flex items-center justify-center gap-1 font-medium hover:border-b hover:border-[#fdfd96]"
             >
               Download <IconBxDownload className="text-2xl" />
             </Link>
@@ -135,7 +135,7 @@ export const NavBar: React.FC<NavBarProps> = (props) => {
             aria-label="Download my resume"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center justify-center gap-1 hover:border-b hover:border-[#8bd8bd] md:hidden"
+            className="flex items-center justify-center gap-1 hover:border-b hover:border-[#fdfd96] md:hidden"
           >
             <IconFileDownload className="text-4xl" />
           </Link>

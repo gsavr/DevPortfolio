@@ -4,7 +4,7 @@
 }
 
 .up-button {
-  @apply absolute top-0 left-1/2 z-50 -translate-x-1/2 -translate-y-9 transform rounded-full bg-[#122429] shadow-2xl transition-all duration-300 hover:bg-[#95AFB3] dark:bg-[#252c38] dark:hover:bg-[#81c9b0];
+  @apply absolute left-1/2 top-0 z-50 -translate-x-1/2 -translate-y-9 transform rounded-full bg-[#5b6165] shadow-2xl transition-all duration-300 hover:bg-[#95AFB3] dark:bg-[#5b6165] dark:hover:bg-[#95AFB3];
 }
 
 .up-arrow:hover {

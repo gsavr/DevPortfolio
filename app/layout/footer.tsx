@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="w-screen bg-[#252c38] text-white dark:bg-[#252c38]">
+    <footer className="w-screen bg-[#5b6165] text-white dark:bg-[#5b6165]">
       <div className=" relative bottom-0 mx-auto px-14 md:pb-10 md:pt-12 lg:px-24">
         {/* UP arrows at top of footer */}
         <Link
