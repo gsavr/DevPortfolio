@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="w-screen bg-[#5b6165] text-white dark:bg-[#5b6165]">
+    <footer className="w-screen bg-[#444444] text-white dark:bg-[#5b6165]">
       <div className=" relative bottom-0 mx-auto px-14 md:pb-10 md:pt-12 lg:px-24">
         {/* UP arrows at top of footer */}
         <Link
@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
           {/*  Copy  */}
           <div className="mt-14">
             <div className="flex space-x-3 text-center md:-mt-10">
-              <div>&copy; 2024, Giorgio Savron Development</div>
+              <div>&copy; 2025, Giorgio Savron Development</div>
             </div>
           </div>
 

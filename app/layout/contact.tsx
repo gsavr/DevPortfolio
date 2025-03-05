@@ -140,7 +140,7 @@ export const Contact: React.FC = () => {
                       type="submit"
                       aria-label="Submit message"
                       className={`form-button  ${
-                        sending ? "bg-[#dede73] shadow-2xl" : "bg-[#7d867f]"
+                        sending ? "bg-[#ebeddf] shadow-2xl" : "bg-[#444444]"
                       }`}
                     >
                       {/* old color button bg-[#243665] */}
