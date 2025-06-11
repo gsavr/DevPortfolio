@@ -68,20 +68,20 @@ export const projects2 = [
     title: "Activity Tracker",
     desc: "React Native | Node.js | MongoDB",
   },
-  {
+  /* {
     link: "https://texter123-dev.herokuapp.com/",
     srcDesk: img.texterDesk,
     srcMobile: img.texterMob,
     title: "Campaign Texting",
     desc: "React | Node.js | Twilio | Auth0",
-  },
-  /*  {
+  }, */
+  {
     link: "https://github.com/gsavr/Code-Note-Editor",
     srcDesk: img.codeDesk,
     srcMobile: img.codeMob,
     title: "Code & Text Editor",
     desc: "Run on Node env | npx jsnote-gs serve",
-  }, */
+  },
 ];
 
 export const projects3 = [
