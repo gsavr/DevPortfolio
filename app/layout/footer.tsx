@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
           {/*  Copy  */}
           <div className="mt-14">
             <div className="flex space-x-3 text-center md:-mt-10">
-              <div>&copy; 2025, Giorgio Savron Development</div>
+              <div>&copy; 2026, Giorgio Savron Development</div>
             </div>
           </div>
 
