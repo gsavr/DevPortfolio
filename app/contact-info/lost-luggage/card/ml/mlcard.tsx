@@ -4,23 +4,45 @@ import { img } from "../../../../assets/contactCard-img";
 
 export const MLCard: React.FC = () => {
   return (
-    <div className="container m-3 flex w-96 flex-col items-center rounded-xl p-4 shadow-lg">
-      <div className=" h-80">
+    <div className="container m-3 flex w-96 flex-col items-center rounded-xl p-4 shadow-xl">
+      <div className="h-72">
         <Image
           width={300}
           height={300}
-          className="picture rounded-xl "
+          className="rounded-xl shadow-md"
           src={img.matthew}
           alt={"profile-picture"}
         />
       </div>
-      <div className="text-center">
-        <div color="blue-gray" className="mb-2 text-xl font-semibold">
+      <div className="mt-2 text-center">
+        <div color="blue-gray" className="mb-2 mt-4 text-xl font-semibold">
           Matthew Land
         </div>
-        <div color="blue-gray" className="font-medium">
-          <a href="tel:+18504453428">+1 (850) 445-3428</a> /{" "}
-          <a href="mailto:matthewland@me.com">matthewland@me.com</a>
+
+        <div
+          color="blue-gray"
+          className="flex flex-col items-center justify-center font-medium"
+        >
+          <div className="flex items-center">
+            <Image
+              width={20}
+              height={20}
+              src={img.phone}
+              alt={"phone"}
+              className="mr-2"
+            />
+            <a href="tel:+18504453428">+1 (850) 445-3428</a> /{" "}
+          </div>
+          <div className="flex items-center">
+            <Image
+              width={20}
+              height={20}
+              src={img.email}
+              alt={"email"}
+              className="mr-2"
+            />
+            <a href="mailto:matthewland@me.com">matthewland@me.com</a>
+          </div>
         </div>
         <div color="blue-gray" className="m-2 font-medium">
           <p>1724 Connecticut Ave NW Apt 2</p>
