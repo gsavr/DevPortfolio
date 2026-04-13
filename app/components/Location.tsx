@@ -5,7 +5,7 @@ interface LocationProps {
   email: string;
 }
 
-export const Location: React.FC<LocationProps> = ({ email = "" }) => {
+export const Location: React.FC<LocationProps> = ({ email }: LocationProps) => {
   //const [location, setLocation] = useState({ lat: NaN, lng: NaN });
   const [error, setError] = useState("");
 
@@ -47,4 +47,5 @@ export const Location: React.FC<LocationProps> = ({ email = "" }) => {
       options,
     );
   }, [email]); // Empty array ensures this runs only once
+  return error ? <p>{error}</p> : null;
 };
