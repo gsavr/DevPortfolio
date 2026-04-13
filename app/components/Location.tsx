@@ -5,7 +5,7 @@ interface LocationProps {
   email: string;
 }
 
-export const Location: React.FC<LocationProps> = ({ email }) => {
+export const Location: React.FC<LocationProps> = ({ email = "" }) => {
   //const [location, setLocation] = useState({ lat: NaN, lng: NaN });
   const [error, setError] = useState("");
 
